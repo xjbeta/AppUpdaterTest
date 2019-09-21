@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		019941C8233606F90045FDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019941C7233606F90045FDE9 /* Assets.xcassets */; };
 		019941CB233606F90045FDE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019941CA233606F90045FDE9 /* Preview Assets.xcassets */; };
 		019941CE233606F90045FDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019941CC233606F90045FDE9 /* Main.storyboard */; };
+		019941D8233608560045FDE9 /* AppUpdater in Frameworks */ = {isa = PBXBuildFile; productRef = 019941D7233608560045FDE9 /* AppUpdater */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019941D8233608560045FDE9 /* AppUpdater in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,9 @@
 			dependencies = (
 			);
 			name = AppUpdaterTest;
+			packageProductDependencies = (
+				019941D7233608560045FDE9 /* AppUpdater */,
+			);
 			productName = AppUpdaterTest;
 			productReference = 019941C0233606F70045FDE9 /* AppUpdaterTest.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 019941B7233606F70045FDE9;
+			packageReferences = (
+				019941D6233608560045FDE9 /* XCRemoteSwiftPackageReference "AppUpdater" */,
+			);
 			productRefGroup = 019941C1233606F70045FDE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		019941D6233608560045FDE9 /* XCRemoteSwiftPackageReference "AppUpdater" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/AppUpdater";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		019941D7233608560045FDE9 /* AppUpdater */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 019941D6233608560045FDE9 /* XCRemoteSwiftPackageReference "AppUpdater" */;
+			productName = AppUpdater;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 019941B8233606F70045FDE9 /* Project object */;
 }
